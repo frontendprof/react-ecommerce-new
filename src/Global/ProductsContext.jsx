@@ -12,7 +12,7 @@ import w from "../assets/watch.jpg";
 
 export const ProductsContext=createContext();
 
-const ProductsContextProvider = () => {
+const ProductsContextProvider = (props) => {
     const [products]=useState([
         {id:1,name:"Cam",price:550,image:cam,status:"hot"},
         {id:2,name:"Headphones",price:350,image:h,status:"new"},
@@ -25,7 +25,7 @@ const ProductsContextProvider = () => {
     ])
     return (
         <ProductsContextProvider value={{ products: [...products] }}>
-            
+            {props.children}
         </ProductsContextProvider>
     )
 }
