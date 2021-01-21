@@ -96,4 +96,22 @@ header{
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
+  color:var(--whiteColor);
+}
+
+.headerText{
+  background: rgba(0,0,0,.4);
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerText h1{
+  font-size: 35px;
+}
+
+.headerText p{
+  margin-top: 7px;
 }
